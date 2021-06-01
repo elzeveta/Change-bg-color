@@ -16,14 +16,14 @@ export default function App() {
       <div className="main">
         <ul className="App">
         <li className="flipper">
-            <Link to="/ColorFlipper">ColorFlipper</Link>
+            <Link className="link active" to="/ColorFlipper">ColorFlipper</Link>
           </li>
           <div className="colors">
           <li className="simple">
-            <Link to="/Simple">Simple</Link>
+            <Link className="link" to="/Simple">Simple</Link>
           </li>
           <li className="hex">
-            <Link to="/Hex">Hex</Link>
+            <Link className="link" to="/Hex">Hex</Link>
           </li>
           </div>
         </ul>
