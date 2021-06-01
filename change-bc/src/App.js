@@ -7,21 +7,30 @@ import {
 } from "react-router-dom";
 import Simple from "./components/Simple"
 import Hex from "./components/Hex"
+import ColorFlipper from "./components/ColorFlipper"
 import './App.css';
 
 export default function App() {
     return (
       <Router>
-      <div>
+      <div className="main">
         <ul className="App">
-          <li>
+        <li className="flipper">
+            <Link to="/ColorFlipper">ColorFlipper</Link>
+          </li>
+          <div className="colors">
+          <li className="simple">
             <Link to="/Simple">Simple</Link>
           </li>
-          <li>
+          <li className="hex">
             <Link to="/Hex">Hex</Link>
           </li>
+          </div>
         </ul>
         <Switch>
+        <Route path="/ColorFlipper">
+            <ColorFlipper/>
+          </Route>
           <Route path="/Simple">
             <Simple/>
           </Route>

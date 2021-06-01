@@ -1,36 +1,26 @@
 import React, { Component } from "react";
 
-class Hex extends Component {
+class ColorFlipper extends Component {
   getRandom(colors) {
     return Math.floor(Math.random() * colors.length);
   }
   onClickHandler() {
     const colors = [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "A",
-      "B",
-      "C",
-      "D",
-      "E",
-      "F"
+ "#CD5C5C",
+ "#DFFF00",
+ "#40E0D0",
+ "#6495ED",
+ "#CCCCFF",
+ "green",
+ "black",
+ "purple",
+ "orange",
+ "white"
     ];
+    const random = this.getRandom(colors);
     const color = document.querySelector(".color");
-
-    let hexColor = "#";
-    for (let i = 0; i < 6; i++) {
-      hexColor += colors[this.getRandom(colors)];
-    }
-    color.textContent = hexColor;
-    document.querySelector("main").style.backgroundColor = hexColor;
+     document.querySelector("main").style.backgroundColor = colors[random];
+    color.textContent = colors[random];
   }
   render() {
     return (
@@ -48,4 +38,4 @@ class Hex extends Component {
   }
 }
 
-export default Hex;
+export default ColorFlipper;

@@ -1,8 +1,29 @@
-.App {
+.main {
   text-align: center;
+  border: 1px solid gray;
+  max-width: 1000px;
+  height: 80vh;
+  margin: auto;
+}
+.App {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px;
 }
 #container {
   text-align: center;
   margin: 0;
   padding: 10px;
 }
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+.colors {
+  display: flex;
+  margin-right: 50px;
+}
+.simple, .hex {
+  margin: 0 10px;
+}
+

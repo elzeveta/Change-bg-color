@@ -28,7 +28,7 @@ class Simple extends Component {
       <main>
         <div id="container">
           <h2>
-            Background Color :<span class="color">red</span>
+            Background Color: <span class="color">red</span>
           </h2>
           <button id="btn" onClick={() => this.onClickHandler()}>
             Click me!
