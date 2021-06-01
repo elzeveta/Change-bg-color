@@ -18,10 +18,10 @@ class Simple extends Component {
       "yellow",
       "orange"
     ];
-    const color = document.querySelector(".color");
-    const random = getRandom();
-    document.querySelector("main").style.backgroundColor = colors[random];
-    color.textContent = colors[random];
+    // const color = document.querySelector(".color");
+    // const random = getRandom();
+    // document.querySelector("main").style.backgroundColor = colors[random];
+    // color.textContent = colors[random];
   }
   render() {
     return (
