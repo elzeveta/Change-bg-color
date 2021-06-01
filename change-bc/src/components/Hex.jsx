@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Simple extends Component {
+class Hex extends Component {
   getRandom(colors) {
     return Math.floor(Math.random() * colors.length);
   }
@@ -48,4 +48,4 @@ class Simple extends Component {
   }
 }
 
-export default Simple;
+export default Hex;
